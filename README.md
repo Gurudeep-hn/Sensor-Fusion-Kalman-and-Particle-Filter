@@ -23,11 +23,10 @@ This project implements **two fundamental state estimation algorithms** extensiv
 - **Robust Noise Handling**: Configurable uncertainty models and measurement dropout scenarios
 - **Flexible Architecture**: Parameterizable simulation environment for various conditions
 - **Real-time Visualization**: Interactive plotting of estimation results and uncertainty bounds
-- **German Engineering Standards**: Thorough documentation and modular design principles
 
 ## 🔧 Technical Implementation
 
-### **Task P2.1: Kalman Filter (Single Object Tracking)**
+### **Task 1: Kalman Filter (Single Object Tracking)**
 
 **Objective**: Estimate position and velocity of a projectile from noisy position measurements
 
@@ -56,7 +55,7 @@ Update:      K(k) = P(k|k-1) * H^T * (H * P(k|k-1) * H^T + R)^(-1)
              P(k|k) = (I - K(k) * H) * P(k|k-1)
 ```
 
-### **Task P2.2: Particle Filter (Multi-Object Tracking)**
+### **Task 2: Particle Filter (Multi-Object Tracking)**
 
 **Objective**: Track two simultaneous projectiles using particle-based state estimation
 
@@ -98,50 +97,6 @@ Where subscripts 1,2 represent the two tracked balls
 | **Missing Observations (30%)** | 1000 | 91% | 0.52m | Variable |
 | **High Noise Environment** | 1500 | 89% | 0.61m | 3m+ recommended |
 
-### **Computational Performance**
-- **Kalman Filter**: O(n³) complexity, ~0.1ms per update step
-- **Particle Filter**: O(N) complexity where N = particle count, ~2.5ms per update (1000 particles)
-- **Real-time Capability**: Both algorithms suitable for real-time applications up to 100Hz
-
-### **German Industry Relevance**
-- **Automotive Sector**: Sensor fusion for ADAS and autonomous driving systems
-- **Industrial Automation**: Process state estimation and predictive maintenance
-- **Aerospace & Defense**: Navigation systems and target tracking
-- **Smart Manufacturing**: Real-time quality control and optimization
-
-## 📈 Skills Demonstrated
-
-**Mathematical Modeling:**
-- Stochastic processes and probability theory
-- State-space representation and system identification
-- Bayesian inference and recursive estimation
-- Multi-variate statistics and covariance analysis
-
-**Algorithm Implementation:**
-- Custom filter implementation from theoretical foundation
-- Numerical methods and computational optimization
-- Real-time algorithm design and performance tuning
-- Software architecture for scientific computing
-
-**Engineering Applications:**
-- Sensor fusion and multi-modal data integration
-- Uncertainty quantification and propagation
-- System validation and performance analysis
-- Professional documentation and reproducible research
-
-
-## 📧 Contact
-
-**Gurudeep Haleangadi Nagesh**  
-Master's Student in Artificial Intelligence  
-Technical University of Applied Sciences Würzburg-Schweinfurt
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/gurudeephn)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/Gurudeep-hn)
-[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:gurudeep409@gmail.com)
-
 ---
 
 **⭐ If you found this sensor fusion implementation valuable for your research or applications, please give it a star!**
-
-*This project demonstrates advanced state estimation techniques essential for modern robotics, autonomous systems, and sensor fusion applications in German engineering industries.*
