@@ -98,5 +98,3 @@ Where subscripts 1,2 represent the two tracked balls
 | **High Noise Environment** | 1500 | 89% | 0.61m | 3m+ recommended |
 
 ---
-
-**⭐ If you found this sensor fusion implementation valuable for your research or applications, please give it a star!**
